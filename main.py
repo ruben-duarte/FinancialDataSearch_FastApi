@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 from pathlib import Path
 from fastapi.responses import FileResponse
 from utils import get_quotation, get_options, history_data, get_data_as_json, create_zip
-from config import QUOTE_URL, OPTIONS_URL, SPARK_URL, QuotationParams
+from config import  QuotationParams
 
 app = FastAPI(
     title="Finance API",

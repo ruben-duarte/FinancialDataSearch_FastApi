@@ -16,9 +16,10 @@ header = {
     'User-Agent': 'Mozilla/5.0'
 }
 
-QUOTE_URL = "https://example.com/quote"
-OPTIONS_URL = "https://example.com/options"
-SPARK_URL = "https://example.com/history"
+QUOTE_URL = BASE_URL + "/quote"
+OPTIONS_URL = BASE_URL + "/options"
+SPARK_URL = BASE_URL + "/spark"
+
 header = {
     "Authorization": "Bearer your-api-key",
     "Content-Type": "application/json"

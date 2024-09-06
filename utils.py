@@ -20,9 +20,9 @@ def get_quotation(search: QuotationParams):
     
     if response.status_code != 200:
         raise HTTPException(status_code=response.status_code, 
-                            detail="Error while searching the quotaion")
+                            detail="Error while searching the quotation")
     
-    return response.json()
+    return [response.json()]
 
 # Function to get stock options
 def get_options(symbol: str):
@@ -36,7 +36,7 @@ def get_options(symbol: str):
         raise HTTPException(status_code=response.status_code, 
                             detail="Error while getting options")
 
-    return response.json()
+    return [response.json()]
 
 # Function to get historical stock data
 def history_data(symbol: str):
@@ -50,7 +50,7 @@ def history_data(symbol: str):
         raise HTTPException(status_code=response.status_code, 
                             detail="Error while getting historical data")
     
-    return response.json()
+    return [response.json()]
 
 
 # Temporary directory to save zip files
