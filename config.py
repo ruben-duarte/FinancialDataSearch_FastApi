@@ -21,8 +21,8 @@ OPTIONS_URL = BASE_URL + "/options"
 SPARK_URL = BASE_URL + "/spark"
 
 header = {
-    "Authorization": "Bearer your-api-key",
-    "Content-Type": "application/json"
+    'X-API-KEY': API_KEY,
+    'User-Agent': 'Mozilla/5.0'
 }
 
 # Data model for quotation parameters
